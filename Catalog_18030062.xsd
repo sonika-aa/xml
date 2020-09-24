@@ -1,0 +1,96 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="vechileshop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="store">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="storename">
+                <xs:complexType>
+                  <xs:simpleType>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:string" name="language" use="required"/>
+                    </xs:extension>
+                  </xs:simpleType>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="address">
+                <xs:complexType>
+                  <xs:simpleType>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:string" name="name" use="required"/>
+                    </xs:extension>
+                  </xs:simpleType>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:float" name="telno"/>
+              <xs:element name="logo">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="img">
+                      <xs:complexType>
+                        <xs:simpleType>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="src"/>
+                          </xs:extension>
+                        </xs:simpleType>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="website">
+                <xs:complexType>
+                  <xs:simpleType>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:anyURI" name="link"/>
+                    </xs:extension>
+                  </xs:simpleType>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="About"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="item" maxOccurs="unbounded" >
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="brandname"/>
+              <xs:simpleType>
+             <xs:restriction base="xs:string">
+                <xs:enumeration value="Audi"/>
+                <xs:enumeration value="Toyota"/>
+                <xs:enumeration value="Ford"/>
+                <xs:enumeration value="Ferrari"/>
+            </xs:restriction>
+            </xs:simpleType>
+              <xs:element name="itemno">
+                <xs:complexType>
+                  <xs:simpleType>
+                    <xs:extension base="xs:float">
+                      <xs:attribute type="xs:string" name="type" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleType>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="description">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="color"/>
+                    <xs:element type="xs:string" name="Speed"/>
+                    <xs:element type="xs:string" name="Instructions"/>
+                    <xs:element type="xs:string" name="Manufacturer"/>
+                    <xs:element type="xs:string" name="CarType"/>
+                    <xs:element type="xs:string" name="Dimension"/>
+                  </xs:sequence>
+                </xs:complexType>
+              <xs:element type="xs:float" name="quantity"/>
+              <xs:element type="xs:string" name="price"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="Category" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

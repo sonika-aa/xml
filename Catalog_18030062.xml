@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="Catalog_18030062.css"?>
+<vechileshop xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<store About = "Cars">
+    <storename language = "English">Cars and Wars</storename>
+    <address name = "Place"> Dillibazzar </address>
+    <telno> 9805890422 </telno>
+    <logo> <img src="images/Image.jpg" />  
+    </logo>
+    <website link="http://www.CarsandWars.com">
+    </website>
+
+</store>
+<item Category = "Hatchback">
+    <brandname>Audi</brandname>
+    <itemno type = "number"> 1 </itemno>
+    <description>
+    <color>Red </color>
+    <Speed>250 Km/h</Speed>
+    <Instructions> The car must be on ground with 8 inches and each wheel must be able to rotate freely. The breaks should be gently applied when come to the destination. The battery should have a minimun no lead charge of 12.5volts. </Instructions>
+    <Manufacturer> Volgswagen</Manufacturer>
+    <CarType>Electric</CarType>
+    <Dimension>4726*1842*2820 </Dimension>
+    </description>
+    <quantity>5 </quantity>
+    <price>$37400</price>
+</item>
+<item Category = "SUV">
+    <brandname>Toyota</brandname>
+    <itemno>2</itemno>
+    <description>
+    <color>white </color>
+    <Speed>155 miles/h</Speed>
+    <Instructions>The crusing speed is maintained at the preset speed from 45 km/h to about 135 km/h when no vechicle is ahead. </Instructions>
+    <Manufacturer>Toyota motor corporation </Manufacturer>
+    <CarType> hybrid electric</CarType>
+    <Dimension>4620*1775*1475 </Dimension>
+    </description>
+    <quantity>4 </quantity>
+    <price>$25280</price>
+</item>
+<item Category = "Sedan">
+    <brandname>Ford </brandname>
+    <itemno>3</itemno>
+    <description>
+    <color>Blue</color>
+    <Speed>347km/h</Speed>
+    <Instructions>On your way home avoid dangerous road and lock the door from front. </Instructions>
+    <Manufacturer>Ford Motor Company</Manufacturer>
+    <CarType>Fuel</CarType>
+    <Dimension>3954*1737*2490</Dimension>
+    </description>
+    <quantity>6</quantity>
+    <price>$23170</price>
+</item>
+<item Category= "MPV">
+    <brandname>Ferrari </brandname>
+    <itemno>7</itemno>
+    <description>
+    <color>Black</color>
+    <Speed>349km/h</Speed>
+    <Instructions>Drive wisely </Instructions>
+    <Manufacturer>Ferrari S.p.A</Manufacturer>
+    <CarType>Fuel</CarType>
+    <Dimension>2560*4527*1937*1213</Dimension>
+    </description>
+    <quantity>7</quantity>
+    <price>$409663</price>
+</item>
+
+</vechileshop>

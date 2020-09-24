@@ -1,0 +1,85 @@
+
+vechileshop
+{ 
+font-size:70%; 
+margin:0.5em; 
+font-family: Ariel Verdana; 
+display:block;
+background-color: whitesmoke;
+width:100%;
+}
+
+store { 
+display:block;   
+background-color:whitesmoke; 
+text-align:right;
+border: 1px solid Red; 
+margin:0.5em;  
+padding:1px  
+
+
+} 
+storename { 
+display:block; 
+font-family: "Times New Roman", Times, serif;
+font-weight:bolder; 
+text-align:center; 
+font-size:30px; 
+background-color: black; 
+background-image: url("Image.jpg");
+margin:0.5em;  
+padding:30px; 
+color: rgb(255, 255, 255);; 
+
+} 
+item { 
+    display:block;  
+    border: 1px solid Red; 
+    margin:0.5em;  
+    padding:30px;  
+    background-color:whitesmoke; 
+    float: right;
+}   
+    address { 
+      font-family: Arial, Helvetica, sans-serif;
+      border: 1px solid gray; 
+      font-size:30px;
+      text-align:right;
+      color:black
+      } 
+   telno { 
+      font-size: 30px;
+      border: 1px solid gray; 
+      color:brown 
+     
+      } 
+website { 
+      color:blue
+      } 
+      
+    logo {  background-image: url("Image.jpg");
+      height: 100%; 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    } 
+    item{
+      font-size: 20px;
+    }
+   
+   brandname{
+    display:list-item;
+    font-size: 30px;
+     
+   }
+   logo{
+     background-image: url("photo.jpg");
+     width: 130px;
+     height: 100px;
+     display: block;
+     margin-bottom: auto;
+     border-radius: 20%
+    
+   }
+    
